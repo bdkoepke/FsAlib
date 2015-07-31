@@ -25,7 +25,6 @@ module Chapter2 =
                                     else findMatch' xs ys' (match ys' with
                                                             | []    -> []
                                                             | y::ys -> ys)
-
         match ys with
         | [] -> false
         | y::ys' -> findMatch' xs ys ys'
