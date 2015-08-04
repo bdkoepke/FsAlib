@@ -54,6 +54,7 @@
     <Content Include="packages.config" />
     <Compile Include="Chapter2.fs" />
     <Content Include="app.config" />
+    <Compile Include="Chapter3.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsUnit.CustomMatchers">

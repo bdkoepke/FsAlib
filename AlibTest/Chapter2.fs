@@ -41,3 +41,20 @@ type ``Find match tests`` ()=
             findMatch  (String.explode "pattern")
                        (String.explode "this is a pattern") |>
                 should equal true
+[<TestClass>]
+type ``Test power`` ()=
+    [<TestMethod>] member test.
+     ``Test power 2^16.`` ()=
+            should equal (Some 65536) (power 2 16)
+    [<TestMethod>] member test.
+     ``Test power 3^5.`` ()=
+            should equal (Some 243) (power 3 5)
+    [<TestMethod>] member test.
+     ``Test power 243^1.`` ()=
+            should equal (Some 243) (power 243 1)
+    [<TestMethod>] member test.
+     ``Test power 2^0.`` ()=
+            should equal (Some 1) (power 2 0)
+    [<TestMethod>] member test.
+     ``Test power 2^(-1).`` ()=
+            should equal None (power 2 (-1))
